@@ -17,6 +17,11 @@ def input_to_index(input)
   return input
 end
 
+def move (board, index, char="X")
+  board[index] = char
+  return board
+end
+
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
   [0,1,2],

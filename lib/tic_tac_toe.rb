@@ -103,7 +103,9 @@ def play(board)
 
   loop do
     turn(board)
-    break if over?(board)
+    if over?(board)
+      break
+    end
   end
   return false
 end

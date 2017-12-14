@@ -103,5 +103,5 @@ def play(board)
   while !won?(board)
     turn(board)
   end
-  puts `The winner is ${winner(board)}`
+  
 end

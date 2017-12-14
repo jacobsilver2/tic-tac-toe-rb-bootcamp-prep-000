@@ -54,6 +54,7 @@ def turn(board)
     input = gets.strip
     index = input_to_index(input)
   turn_count(board)
+  char = current_player(board)
   end
   move(board, index, char)
   display_board(board)

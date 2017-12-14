@@ -100,7 +100,6 @@ def winner(board)
 end
 
 def play(board)
-
   loop do
     turn(board)
     if over?(board)

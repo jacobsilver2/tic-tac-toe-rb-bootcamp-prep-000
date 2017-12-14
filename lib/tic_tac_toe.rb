@@ -22,6 +22,14 @@ def move (board, index, char)
   return board
 end
 
+def valid_move?(board, index)
+  if index.between?(0, 8) && !position_taken?(board, index)
+    true
+  else
+    false
+  end
+end
+
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
   [0,1,2],

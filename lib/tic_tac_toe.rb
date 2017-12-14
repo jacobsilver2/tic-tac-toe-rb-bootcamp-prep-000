@@ -30,6 +30,21 @@ def valid_move?(board, index)
   end
 end
 
+def turn_count(board)
+  turnCount = 0
+  board.each do |turn|
+  if turn == "X" || turn == "O"
+    turnCount += 1
+  end
+end
+  return turnCount
+end
+
+
+def current_player(board)
+  turn_count(board).even? ? (return "X") : (return "O")
+end
+
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
@@ -38,6 +53,7 @@ def turn(board)
     puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index(input)
+  turn_count(board)
   end
   move(board, index, char)
   display_board(board)

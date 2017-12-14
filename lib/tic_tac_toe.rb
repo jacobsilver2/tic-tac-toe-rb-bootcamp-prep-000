@@ -53,7 +53,6 @@ def turn(board)
     puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index(input)
-  turn_count(board)
   char = current_player(board)
   end
   move(board, index, char)

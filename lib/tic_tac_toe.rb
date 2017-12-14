@@ -102,6 +102,7 @@ end
 def play(board)
   turn(board)
   if !over(board)
+    turn(board)
   end
   return false
 end
